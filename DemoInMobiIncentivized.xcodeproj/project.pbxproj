@@ -447,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.com.epi.BaoMoi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zad.InMobiInstream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.com.epi.BaoMoi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zad.InMobiInstream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
