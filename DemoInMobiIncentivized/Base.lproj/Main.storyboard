@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Tv-sD-oSn"/>
+                        <viewControllerLayoutGuide type="bottom" id="mlE-w8-c7G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg2-LK-Hno">
+                                <rect key="frame" x="186" y="120.5" width="42" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="LOAD"/>
+                                <connections>
+                                    <action selector="onLoadAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvZ-7q-XmO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLq-vW-MHS">
+                                <rect key="frame" x="183" y="160.5" width="48" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="SHOW"/>
+                                <connections>
+                                    <action selector="onShowAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJ2-X9-HRO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEMO INMOBI VIDEO REWARDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULE-6P-rvP">
+                                <rect key="frame" x="10" y="69" width="394" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATUS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Aw-pd-dfX">
+                                <rect key="frame" x="10" y="811.5" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aap-by-Ruj">
+                                <rect key="frame" x="175" y="200.5" width="64" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DISMISS"/>
+                                <connections>
+                                    <action selector="onDismissAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVy-Pc-7PE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mg2-LK-Hno" firstAttribute="top" secondItem="ULE-6P-rvP" secondAttribute="bottom" constant="30" id="C7Z-1m-dj8"/>
+                            <constraint firstItem="7Aw-pd-dfX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Ef4-2q-CyI"/>
+                            <constraint firstAttribute="trailing" secondItem="7Aw-pd-dfX" secondAttribute="trailing" constant="10" id="FGN-bu-140"/>
+                            <constraint firstItem="mlE-w8-c7G" firstAttribute="top" secondItem="7Aw-pd-dfX" secondAttribute="bottom" constant="30" id="SOi-lJ-gVr"/>
+                            <constraint firstItem="xLq-vW-MHS" firstAttribute="top" secondItem="Mg2-LK-Hno" secondAttribute="bottom" constant="10" id="SUS-ZG-mEj"/>
+                            <constraint firstItem="aap-by-Ruj" firstAttribute="top" secondItem="xLq-vW-MHS" secondAttribute="bottom" constant="10" id="YU3-gD-tBa"/>
+                            <constraint firstItem="aap-by-Ruj" firstAttribute="centerX" secondItem="xLq-vW-MHS" secondAttribute="centerX" id="b8f-Ev-6qg"/>
+                            <constraint firstItem="xLq-vW-MHS" firstAttribute="centerX" secondItem="Mg2-LK-Hno" secondAttribute="centerX" id="fCL-pj-PB2"/>
+                            <constraint firstItem="ULE-6P-rvP" firstAttribute="top" secondItem="8Tv-sD-oSn" secondAttribute="bottom" constant="25" id="g6r-Q1-4sc"/>
+                            <constraint firstItem="ULE-6P-rvP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="iyW-9Z-AVC"/>
+                            <constraint firstAttribute="trailing" secondItem="ULE-6P-rvP" secondAttribute="trailing" constant="10" id="veC-JO-hSM"/>
+                            <constraint firstItem="Mg2-LK-Hno" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xgi-Lu-wnd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnDismiss" destination="aap-by-Ruj" id="OTh-gt-YLX"/>
+                        <outlet property="lbStatus" destination="7Aw-pd-dfX" id="mRG-sh-qFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
